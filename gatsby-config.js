@@ -3,7 +3,6 @@ module.exports = {
     title: "ValheimToolkit",
   },
   plugins: [
-    "gatsby-plugin-sass",
     {
       resolve: "gatsby-plugin-google-analytics",
       options: {
