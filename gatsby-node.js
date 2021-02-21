@@ -1,4 +1,4 @@
-exports.onCreateWebpackConfig = function({ actions, plugins }) {
+exports.onCreateWebpackConfig = function({ stage, loaders, actions, plugins }) {
   actions.setWebpackConfig({
     resolve: {
       alias: {
@@ -11,4 +11,17 @@ exports.onCreateWebpackConfig = function({ actions, plugins }) {
       }),
     ],
   })
+
+  if (stage === "build-html") {
+    actions.setWebpackConfig({
+      module: {
+        rules: [
+          {
+            test: /jsoneditor/,
+            use: loaders.null(),
+          },
+        ],
+      },
+    })
+  }
 }
