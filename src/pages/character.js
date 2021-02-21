@@ -158,8 +158,9 @@ const CharacterPage = () => {
               playerData.skinColor: {x: red, y: blue, z: green} where each value is in the range from 0.0 to 1.0. {x: 1.0, y: 0, z: 0} gives you pure red.
               playerData.hairColor: same as above
 
-              TODO -- insert additional docs here.
-              Skill ID values, list of item names, etc.
+              Item data dump (names, attributes, etc.): https://gist.github.com/balu92/49c189f1d51fb0c84c5fa2daace6bdcf
+
+              TODO -- insert additional docs here
               `}
             </code>
         </pre>

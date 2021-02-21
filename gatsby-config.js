@@ -1,6 +1,7 @@
 module.exports = {
+  pathPrefix: "/valheim-tools",
   siteMetadata: {
-    title: "ValheimToolkit",
+    title: "ValheimTools",
   },
   plugins: [
     {
